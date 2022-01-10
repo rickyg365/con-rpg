@@ -74,7 +74,7 @@ class Bag:
         if self.items[item_key] <= 0:
             del self.items[item_key]
 
-        return True, f"{item_key} used!"
+        return True, f"{item_key} available!"
 
 
 def main():

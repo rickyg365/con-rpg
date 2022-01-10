@@ -13,6 +13,13 @@ def clear_screen():
 def buildHPBar(hp_amount, total_hp, hp_bar_length=10):
     hp_fraction = hp_amount/total_hp 
     hp_in_bar = int(hp_fraction * hp_bar_length)
+
+    if hp_in_bar == 0 and hp_amount > 0:
+        hp_in_bar = 1
+    
+    # if hp_fraction > 0 and hp_fraction < 1:
+    #     hp_in_bar = 1
+    
     free_space = hp_bar_length - hp_in_bar
 
     new_bar = f"{'■'*hp_in_bar}{'□'*free_space}" 
