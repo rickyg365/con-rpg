@@ -33,7 +33,7 @@ def main():
     main_game.add(Scene(1, {
         'name': "intro scene",
         'data': f"""\n\n\n\n\n\n{'Welcome!':^{cols}}\n\n\n\n\n\n""",
-    }))
+    }, delay=3))
     main_game.add(BattleScene(2, new_player, Enemy()))
 
     main_game.add(Scene(3, {
@@ -42,13 +42,6 @@ def main():
     }, delay=3))
 
     main_game.run(True)
-
-    # Battle
-    # battle = Battle(new_player, new_enemy)
-    # try:
-    #     battle.run()
-    # except KeyboardInterrupt:
-    #     print("\n[Quit Program]\n")
     
 
 if __name__ == "__main__":
