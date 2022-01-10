@@ -1,2 +1,2 @@
-# con-rpg
+# Console RPG
 A Simple Console Website
