@@ -1,2 +1,4 @@
 # Console RPG
-A Simple Console Website
+An attempt to create a console ascii rpg! 
+
+***Work in Progress***
